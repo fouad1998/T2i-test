@@ -1,0 +1,77 @@
+.container {
+  width: 100vw;
+}
+
+.wrapper {
+  display: flex;
+  height: calc(100vh - 80px);
+}
+
+.left-side {
+  flex: 0 0 33%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.right-side {
+  flex: 1 1 auto;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-left: none;
+  padding: 10px;
+}
+
+.left-side > * {
+  height: 50%;
+  overflow: hidden;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.left-side > *:first-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#date-time {
+  display: block;
+  margin-left: auto;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-top: none;
+  width: 300px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.loading {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 45%;
+  background-color: blanchedalmond;
+  font-weight: 500;
+  font-size: small;
+  border: 1px solid black;
+  padding: 4px 10px;
+}
+
+.ticket {
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.birthday {
+  background-color: red;
+}
+
+.coming-birthday {
+  background-color: yellow;
+}
+
+.passed-birthday {
+  background-color: orange;
+}

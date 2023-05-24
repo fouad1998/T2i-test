@@ -1,0 +1,17 @@
+{
+    "name": "t2i/test",
+    "authors": [
+        {
+            "name": "Hachour Fouad",
+            "email": "hachour5fouad@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "T2i\\": ".",
+            "T2i\\Config\\": "./config",
+            "T2i\\Model\\": "./model"
+        }
+    },
+    "require": {}
+}
