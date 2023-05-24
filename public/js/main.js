@@ -60,12 +60,11 @@ function renderPicked() {
   }
 
   const diff = diffDays(birthday);
-  console.log(diff);
   if (diff === 0) {
     lastItem.classList.add('birthday');
   } else if (diff < 0 && diff >= -7) {
     lastItem.classList.add('coming-birthday');
-  } else if (diff < 7 && diff > 0) {
+  } else if (diff <= 7 && diff > 0) {
     lastItem.classList.add('passed-birthday');
   }
 }
